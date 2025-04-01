@@ -46,7 +46,7 @@ app.*.map.json
 
 
 # Ignore metadata generation files
-**/metadata_generation_command.txt
+**/metadata_generation_command.txtm
 
 # Ignore hash key files
 **/hash_key.txt
@@ -60,7 +60,7 @@ app.*.map.json
 **/codemodel-v2
 **/rules.ninja
 **/*.o
-**/*.d
+**/*.dme
 **/*.bin
 **/*.json
 
