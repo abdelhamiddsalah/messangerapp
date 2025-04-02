@@ -21,13 +21,13 @@ class CustomAppbar extends StatelessWidget {
           width: 50,
           height: 50,
           decoration: BoxDecoration(
-            color: Color(0xff666666).withOpacity(0.2),
+            color: const Color(0xfff5f5f5),
             borderRadius: BorderRadius.circular(25),
           ),
           child: Image.asset(Assets.imagesCameraicon),
         ),
         const SizedBox(width: 15),
-          CustomContainerIcons()
+          const CustomContainerIcons()
       ],
     ),
       ],
@@ -46,7 +46,7 @@ class CustomContainerIcons extends StatelessWidget {
     width: 50,
     height: 50,
     decoration: BoxDecoration(
-      color: Color(0xff666666).withOpacity(0.2),
+      color: const Color(0xfff5f5f5),
       borderRadius: BorderRadius.circular(25),
     ),
     child: Image.asset(Assets.imagesWriteicon),

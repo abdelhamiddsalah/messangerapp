@@ -19,10 +19,10 @@ class HorizentolListviewInChats extends StatelessWidget {
     width: 50,
     height: 50,
     decoration: BoxDecoration(
-              color: Color(0xff666666).withOpacity(0.2),
+              color: const Color(0xfff5f5f5),
               borderRadius: BorderRadius.circular(25),
     ),
-    child: Image.asset(Assets.imagesWriteicon),
+    child: Image.asset(Assets.imagesAddicon),
                 ),
               const SizedBox(height: 5),
                Text(
@@ -43,7 +43,19 @@ class HorizentolListviewInChats extends StatelessWidget {
     padding: const EdgeInsets.symmetric(horizontal: 15),
     child: Column(
       children: [
-        Image.asset(Assets.imagesOne),
+        Stack(children:[ Image.asset(Assets.imagesOne),
+        Positioned(
+          right: 0,
+          bottom: 0,
+          child: Container(
+          width: 15,
+          height: 15,
+          decoration: const BoxDecoration(
+            color: Color(0xff5ad439),
+            shape: BoxShape.circle,
+          ),
+        ))
+        ]),
         Text(
           'Assem',
           style: TextsStyles.titleStyle.copyWith(

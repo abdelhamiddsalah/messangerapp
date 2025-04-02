@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messangerapp/features/chats/presentation/widgets/container_in_listofones.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/custom_appbar.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/horizentol_listview_inchats.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/textformfield_search.dart';
@@ -8,23 +9,36 @@ class ChatsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          child: Column(
-            children: [
-              CustomAppbar(),
-              SizedBox(height: 20),
-              TextformfieldSearch(),
-              SizedBox(height: 20),
-              HorizentolListviewInChats(),
-            ],
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const CustomAppbar(),
+                const SizedBox(height: 20),
+                const TextformfieldSearch(),
+                const SizedBox(height: 20),
+                const HorizentolListviewInChats(),
+                const SizedBox(height: 10),
+                ListView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(), // تعطيل الـ scroll في الـ ListView
+                  itemCount: 10,
+                  itemBuilder: (context, index) {
+                    return const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                      child: ContainerInListofones(),
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),
     );
   }
 }
-

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messangerapp/features/chats/presentation/screens/chats_view.dart';
+import 'package:messangerapp/core/widgets/messanger_navbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  const MaterialApp(
       title: 'Messenger App',
       debugShowCheckedModeBanner: false,
-      home:  ChatsView(),
+      home:  MessengerNavBar(),
     );
   }
 }
