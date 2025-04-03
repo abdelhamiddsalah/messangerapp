@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:messangerapp/constants/images.dart';
 import 'package:messangerapp/core/styles/texts_styles.dart';
+import 'package:messangerapp/core/widgets/image_with_active.dart';
 
 class HorizentolListviewInChats extends StatelessWidget {
   const HorizentolListviewInChats({
@@ -43,19 +44,7 @@ class HorizentolListviewInChats extends StatelessWidget {
     padding: const EdgeInsets.symmetric(horizontal: 15),
     child: Column(
       children: [
-        Stack(children:[ Image.asset(Assets.imagesOne),
-        Positioned(
-          right: 0,
-          bottom: 0,
-          child: Container(
-          width: 15,
-          height: 15,
-          decoration: const BoxDecoration(
-            color: Color(0xff5ad439),
-            shape: BoxShape.circle,
-          ),
-        ))
-        ]),
+        const ImageWithActive(),
         Text(
           'Assem',
           style: TextsStyles.titleStyle.copyWith(

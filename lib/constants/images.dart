@@ -6,9 +6,21 @@ class Assets {
   /// assets/images/addicon.png
   static const String imagesAddicon = "assets/images/addicon.png";
 
+  /// Assets for imagesAvataricon
+  /// assets/images/avataricon.png
+  static const String imagesAvataricon = "assets/images/avataricon.png";
+
   /// Assets for imagesCameraicon
   /// assets/images/cameraicon.png
   static const String imagesCameraicon = "assets/images/cameraicon.png";
+
+  /// Assets for imagesComment
+  /// assets/images/comment.png
+  static const String imagesComment = "assets/images/comment.png";
+
+  /// Assets for imagesHand
+  /// assets/images/hand.png
+  static const String imagesHand = "assets/images/hand.png";
 
   /// Assets for imagesOne
   /// assets/images/one.png

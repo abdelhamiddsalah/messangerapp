@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messangerapp/constants/images.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/container_in_listofones.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/custom_appbar.dart';
 import 'package:messangerapp/features/chats/presentation/widgets/horizentol_listview_inchats.dart';
@@ -17,12 +18,11 @@ class ChatsViewBody extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const CustomAppbar(),
+                 const CustomAppbar(title: 'Chats', profileImage: Assets.imagesPerson, writeIcon: Assets.imagesWriteicon, cameraIcon: Assets.imagesCameraicon),
                 const SizedBox(height: 20),
                 const TextformfieldSearch(),
                 const SizedBox(height: 20),
                 const HorizentolListviewInChats(),
-                const SizedBox(height: 10),
                 ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(), // تعطيل الـ scroll في الـ ListView

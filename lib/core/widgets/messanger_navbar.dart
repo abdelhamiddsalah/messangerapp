@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:messangerapp/features/chats/presentation/screens/chats_view.dart';
+import 'package:messangerapp/features/people/presentation/screens/people_view.dart';
 
 
 class MessengerNavBar extends StatefulWidget {
@@ -15,7 +16,7 @@ class _MessengerNavBarState extends State<MessengerNavBar> {
   // ✅ قائمة الصفحات المرتبطة بكل أيقونة
   final List<Widget> _pages = [
     const ChatsView(),
-   const ChatsView(),
+   const PeopleView(),
    const ChatsView(),
   ];
 
